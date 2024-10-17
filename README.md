@@ -105,6 +105,22 @@ or
 kK = reshape(KE(:)*E*x(:)',60*60*nele,1);
 kM = reshape(ME(:)*rho*x(:)',60*60*nele,1);
 ```
+where E and rho are the Young's modulus and mass density, while `x`is 
+
+```matlab
+x = ones(nely, nelx, nelz);
+```
+with `nelx`, `nely`and `nelz`as the number of elements in the $x$, $y$ and $z$ axes.
+
+Finally, the global matrices are given by 
+```matlab
+K = sparse(iS,jS,kK); K = (K + K')/2;
+M = sparse(iS,jS,kM); M = (M + M')/2;
+```
+
+## References
+The theory and implementation of the finite element method used in this project are based on concepts from the book Introduction to Finite Element Vibration Analysis by Maurice Petyt. This book provides a comprehensive understanding of finite element formulations and their application to vibration analysis.
+
 
 
 
