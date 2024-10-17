@@ -100,15 +100,15 @@ where `nele` is the number of elements of the global structure.
 The resulting vectors (`iS` and `jS`) are structured so that the indices $iS(t)$ and $jS(t)$ correspond to the (i, j)th entry of the stiffness and inertia matrix for element $e$, where $t = i + 8(j − 1) + 64(e − 1)$. The third vector is obtained by reshaping the elementar intertia and stiffness matrices. 
 
 ```matlab
-kK = reshape(KE(:)*E*x(:)',24*24*nele,1);
-kM = reshape(ME(:)*rho*x(:)',24*24*nele,1);
+kK = reshape(KE(:)*x(:)',24*24*nele,1);
+kM = reshape(ME(:)*x(:)',24*24*nele,1);
 ```
 or
 ```matlab
 kK = reshape(KE(:)*E*x(:)',60*60*nele,1);
 kM = reshape(ME(:)*rho*x(:)',60*60*nele,1);
 ```
-where E and rho are the Young's modulus and mass density, while `x`is 
+where `x`is defined as
 
 ```matlab
 x = ones(nely, nelx, nelz);
