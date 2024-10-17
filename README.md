@@ -105,8 +105,8 @@ kM = reshape(ME(:)*x(:)',24*24*nele,1);
 ```
 or
 ```matlab
-kK = reshape(KE(:)*E*x(:)',60*60*nele,1);
-kM = reshape(ME(:)*rho*x(:)',60*60*nele,1);
+kK = reshape(KE(:)*x(:)',60*60*nele,1);
+kM = reshape(ME(:)*x(:)',60*60*nele,1);
 ```
 where `x`is defined as
 
