@@ -9,18 +9,7 @@ The 8-node isoparametric hexahedral element is defined by nodes positioned at ea
 
 <img src="Figures/8nodes.svg" alt="8-Node Hexahedral Element" width="300"/>
 
-#### Node positions and shape functions
-
-| Node | $\xi$ | $\eta$ | $\zeta$ |
-|----------|----------|----------|----------|
-| 1 | -1 | -1 | -1 |
-| 2 | 1 | -1 | -1 |
-| 3 | 1 | 1 | -1 |
-| 4 | -1 | 1 | -1 |
-| 5 | -1 | -1 | 1 |
-| 6 | 1 | -1 | 1 |
-| 7 | 1 | 1 | 1 |
-| 8 | -1 | 1 | 1 |
+#### Shape functions
 
 The shape functions for the 8-node element are defined as:
 
@@ -36,30 +25,7 @@ The 8-node isoparametric hexahedral element is defined by nodes positioned at ea
 
 <img src="Figures/20nodes.svg" alt="8-Node Hexahedral Element" width="300"/>
 
-#### Node positions and shape functions
-
-| Node | $\xi$ | $\eta$ | $\zeta$ |
-|----------|----------|----------|----------|
-| 1 | -1 | -1 | -1 |
-| 2 | 1 | -1 | -1 |
-| 3 | 1 | 1 | -1 |
-| 4 | -1 | 1 | -1 |
-| 5 | -1 | -1 | 1 |
-| 6 | 1 | -1 | 1 |
-| 7 | 1 | 1 | 1 |
-| 8 | -1 | 1 | 1 |
-| 9 | 0 | -1 | -1 |
-| 10 | 1 | 0 | -1 |
-| 11 | 0 | 1 | -1 |
-| 12 | -1 | 0 | -1 |
-| 13 | 0 | -1 | 1 |
-| 14 | 1 | 0 | 1 |
-| 15 | 0 | 1 | 1 |
-| 16 | -1 | 0 | 1 |
-| 17 | -1 | -1 | 0 |
-| 19 | 1 | -1 | 0 |
-| 19 | 1 | 1 | 0 |
-| 20 | -1 | 1 | 0 |
+#### Shape functions
 
 The shape functions for the 8-node element are defined as:
 
@@ -97,7 +63,11 @@ The nodes in the structure are numbered in a specific order for consistency and 
 
 This systematic approach ensures that each node has a unique identifier, making it easier to reference them in the mathematical formulations and the finite element analysis.
 
-Below is a visual representation of the node distribution in the structure:
+Below is a visual representation of the node distribution in the structure, where the numbering of the degrees of freedom (in \( x \), \( y \), and \( z \)) for each node is indicated in red.
+
+<img src="Figures/8nodes_structure.svg" alt="8-Node Hexahedral Element" width="500"/>
+<img src="Figures/20nodes_structure.svg" alt="8-Node Hexahedral Element" width="500"/>
+
 
 
   
