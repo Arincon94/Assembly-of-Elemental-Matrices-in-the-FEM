@@ -27,7 +27,7 @@ The 8-node isoparametric hexahedral element is defined by nodes positioned at ea
 
 #### Shape functions
 
-The shape functions for the 8-node element are defined as:
+The shape functions for the 20-node element are defined as:
 
 - For nodes 1 to 8:
   
