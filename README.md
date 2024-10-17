@@ -123,6 +123,38 @@ M = sparse(iS,jS,kM); M = (M + M')/2;
 
 ## Validation 
 
+The assembly of matrices is validated with the exercise shown in the following image, which is proposed in Introduction to Finite Element Vibration Analysis by Maurice Petyt (pages 184 to 185 of the second edition). 
+
+<img src="Figures/Validation_structure.svg" alt="8-Node Hexahedral Element" width="500"/>
+
+The parameters are:
+
+```matlab
+% Dimensions in m
+Lx = 3.66; Ly = 0.61; Lz = 0.3;
+% Number of elements for the 8-node element
+nelx = 12; nely = 6; nelz = 3;
+% Number of elements for the 20-node element
+nelx = 6; nely = 3; nelz = 2;
+% Material properties
+E = 2.068e11; % N/m^2
+nu = 0.3; % -
+rho = 8058; % kg/m^3
+```
+The boundary conditions for the 8-node solid are: 
+- $u = 0$ for all nodes on the left edge (in the image, this is the shaded contour in gray)
+- $v = 0$ along the line $y = 0.305$
+- $w = 0$ along the line $\ = 0$
+
+For the 20-node element, the conditions are the same for $u$ and $v$, while $w = 0$ along the line $z = 0.15$.
+
+The first three eigenfrequencies for each element are shown in the following table
+
+| Mode | 8-Node Element Eigenfrequencies (Hz) | 20-Node Element Eigenfrequencies (Hz) |
+|------|--------------------------------------|---------------------------------------|
+| 1    | 21.742                               | 18.312                                |
+| 2    | 38.223                               | 36.43                                 |
+| 3    | 133.7                                | 112.22                                |
 
 
 ## References
