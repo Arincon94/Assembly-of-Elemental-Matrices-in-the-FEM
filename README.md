@@ -142,9 +142,9 @@ nu = 0.3; % -
 rho = 8058; % kg/m^3
 ```
 The boundary conditions for the 8-node solid are: 
-- $u = 0$ for all nodes on the left edge (in the image, this is the shaded contour in gray)
+- $u = 0$ along the line $x = 0$
 - $v = 0$ along the line $y = 0.305$
-- $w = 0$ along the line $\ = 0$
+- $w = 0$ along the line $z = 0$
 
 For the 20-node element, the conditions are the same for $u$ and $v$, while $w = 0$ along the line $z = 0.15$.
 
