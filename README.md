@@ -63,10 +63,12 @@ The nodes in the structure are numbered in a specific order for consistency and 
 
 This systematic approach ensures that each node has a unique identifier, making it easier to reference them in the mathematical formulations and the finite element analysis (the elements in the global structure are numbered following the same idea).
 
-Below is a visual representation of the node distribution in the structure, where the numbering of the degrees of freedom (in \( x \), \( y \), and \( z \)) for each node is indicated in red.
+Below is a visual representation of the node distribution in the structure, where the numbering of the degrees of freedom (in $x$, $y$, and $z$) for each node of the 8-node element is indicated in red (DOFs of the 20-node elements are numbered following the same idea).
 
-<img src="Figures/8nodes_structure.svg" alt="8-Node Hexahedral Element" width="500"/>
-<img src="Figures/20nodes_structure.svg" alt="8-Node Hexahedral Element" width="500"/>
+<img src="Figures/8nodes_global_structure.svg" alt="8-Node Hexahedral Element" width="500"/>
+<img src="Figures/20nodes_global_structure.svg" alt="8-Node Hexahedral Element" width="220"/>
+
+Note that the Cartesian coordinates of the first node of the 8-node element are `(-1,-1,-1)`, while the global coordinates of the first node would be `(-Lx/2, Ly/2, -Lz/2)`.
 
 ## Indexing Global Matrices
 
@@ -75,7 +77,8 @@ To index the global matrices, a matrix of degrees of freedom (`edofMat`, as it i
 Below is shown how the matrix would look for the 8-node element.
 
 ```matlab
-edofMat = [4 5 6 10 11 12 7 8 9 1 2 3 16 17 18 22 23 24 19 20 21 13 14 15];
+edofMat = 4 5 6 13 14 15 10 11 12 1 2 3 22 23 24 31 32 33 28 29 30 19 20 21;
+          7 8 9 16 17 18 13 14 15 4 5 6 25 26 27 34 35 36 31 32 33 22 23 24];
 ```
 
 Elements are placed below this line of the matrix.
@@ -117,6 +120,10 @@ Finally, the global matrices are given by
 K = sparse(iS,jS,kK); K = (K + K')/2;
 M = sparse(iS,jS,kM); M = (M + M')/2;
 ```
+
+## Validation 
+
+
 
 ## References
 The theory and implementation of the finite element method used in this project are based on concepts from the book Introduction to Finite Element Vibration Analysis by Maurice Petyt. This book provides a comprehensive understanding of finite element formulations and their application to vibration analysis.
