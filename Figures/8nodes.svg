@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+<svg width="23mm" height="20mm" version="1.1" viewBox="0 0 23 20" xmlns="http://www.w3.org/2000/svg">
+ <defs>
+  <marker id="marker38061-1" overflow="visible" markerHeight="6.7071066" markerWidth="4.0606599" orient="auto-start-reverse" preserveAspectRatio="xMidYMid" viewBox="0 0 4.0606602 6.7071068">
+   <path transform="rotate(180 .125 0)" d="m3-3-3 3 3 3" fill="none" stroke="context-stroke"/>
+  </marker>
+  <marker id="Arrow1-3" overflow="visible" markerHeight="6.7071066" markerWidth="4.0606604" orient="auto-start-reverse" preserveAspectRatio="xMidYMid" viewBox="0 0 4.0606602 6.7071068">
+   <path transform="rotate(180 .125 0)" d="m3-3-3 3 3 3" fill="none" stroke="context-stroke"/>
+  </marker>
+ </defs>
+ <g fill="#ef3e3e" stroke="#929292" stroke-linejoin="round" stroke-width=".05">
+  <path d="m11.506 10.17 2.323 0.62245" marker-end="url(#marker38061-1)"/>
+  <path d="m11.549 10.155 2.2046-1.2728" marker-end="url(#marker38061-1)"/>
+  <path d="m11.527 10.189v-2.3892" marker-end="url(#Arrow1-3)"/>
+ </g>
+ <g fill="#969696" font-family="'Times New Roman'" font-size="1px" font-style="italic" stroke="#929292" stroke-linejoin="round" stroke-opacity="0" stroke-width=".05" text-anchor="middle">
+  <text x="14.23912" y="11.101" text-align="center" xml:space="preserve"><tspan x="14.23912" y="11.101" fill="#969696" font-family="'Times New Roman'" font-style="italic" stroke="#929292" stroke-opacity="0" stroke-width=".05">ξ</tspan></text>
+  <text x="14.185936" y="8.8288116" text-align="center" xml:space="preserve"><tspan x="14.185936" y="8.8288116" fill="#969696" font-family="'Times New Roman'" font-style="italic" stroke="#929292" stroke-opacity="0" stroke-width=".05">η</tspan></text>
+  <text x="11.444939" y="7.4564157" text-align="center" xml:space="preserve"><tspan x="11.444939" y="7.4564157" font-family="'Times New Roman'" font-style="italic" stroke-width=".05">ζ</tspan></text>
+ </g>
+ <g fill-opacity="0" stroke="#000" stroke-linejoin="round" stroke-width=".15">
+  <path d="m1.304 15.69 11.443 3.0662"/>
+  <path d="m12.692 18.763 9.2818-5.3589"/>
+  <path d="m1.304 15.69 9.2818-5.3589" stroke-dasharray="1.8, 0.15"/>
+  <path d="m1.3415 15.755v-8.9833"/>
+  <path d="m12.692 18.763v-8.9833"/>
+  <path d="m10.586 10.395v-8.9833" stroke-dasharray="1.8, 0.15"/>
+  <g>
+   <path d="m1.2859 6.8093 11.443 3.0662"/>
+   <path d="m21.936 13.456v-8.9833"/>
+   <path d="m12.684 9.8635 9.2818-5.3589"/>
+   <path d="m10.541 1.4462 11.443 3.0662"/>
+  </g>
+  <path d="m10.53 10.338 11.443 3.0662" stroke-dasharray="1.8, 0.15"/>
+  <path d="m1.2953 6.8352 9.2818-5.3589"/>
+ </g>
+ <g>
+  <circle cx="10.586" cy="1.4982" r=".225"/>
+  <circle cx="10.586" cy="10.326" r=".225"/>
+  <circle cx="21.954" cy="4.5848" r=".225"/>
+  <circle cx="21.936" cy="13.408" r=".225"/>
+  <circle cx="1.3415" cy="6.7712" r=".225"/>
+  <circle cx="1.3762" cy="15.654" r=".225"/>
+  <circle cx="12.692" cy="9.7799" r=".225"/>
+  <circle cx="12.692" cy="18.763" r=".225"/>
+ </g>
+ <text x="10.157967" y="1.2688915" fill="#000000" font-family="'Times New Roman'" font-size="1px" stroke="#000000" stroke-dasharray="1.8, 0.15" stroke-linejoin="round" stroke-opacity=".0078947" stroke-width=".15" text-align="center" text-anchor="middle" xml:space="preserve"><tspan x="10.157967" y="1.2688915" fill="#000000" font-size="1px" stroke="#000000" stroke-opacity=".0078947" stroke-width=".15">8</tspan></text>
+ <circle cx="10.586" cy="10.326" r=".225"/>
+ <text x="10.157967" y="10.096848" fill="#000000" font-family="'Times New Roman'" font-size="1px" stroke="#000000" stroke-dasharray="1.8, 0.15" stroke-linejoin="round" stroke-opacity=".0078947" stroke-width=".15" text-align="center" text-anchor="middle" xml:space="preserve"><tspan x="10.157967" y="10.096848" fill="#000000" font-size="1px" stroke="#000000" stroke-opacity=".0078947" stroke-width=".15">4</tspan></text>
+ <circle cx="21.954" cy="4.5848" r=".225"/>
+ <text x="21.526375" y="4.0156336" fill="#000000" font-family="'Times New Roman'" font-size="1px" stroke="#000000" stroke-dasharray="1.8, 0.15" stroke-linejoin="round" stroke-opacity=".0078947" stroke-width=".15" text-align="center" text-anchor="middle" xml:space="preserve"><tspan x="21.526375" y="4.0156336" fill="#000000" font-size="1px" stroke="#000000" stroke-opacity=".0078947" stroke-width=".15">7</tspan></text>
+ <circle cx="21.936" cy="13.408" r=".225"/>
+ <text x="21.507927" y="12.987145" fill="#000000" font-family="'Times New Roman'" font-size="1px" stroke="#000000" stroke-dasharray="1.8, 0.15" stroke-linejoin="round" stroke-opacity=".0078947" stroke-width=".15" text-align="center" text-anchor="middle" xml:space="preserve"><tspan x="21.507927" y="12.987145" fill="#000000" font-size="1px" stroke="#000000" stroke-opacity=".0078947" stroke-width=".15">3</tspan></text>
+ <circle cx="1.3415" cy="6.7712" r=".225"/>
+ <text x="0.75038159" y="6.5419288" fill="#000000" font-family="'Times New Roman'" font-size="1px" stroke="#000000" stroke-dasharray="1.8, 0.15" stroke-linejoin="round" stroke-opacity=".0078947" stroke-width=".15" text-align="center" text-anchor="middle" xml:space="preserve"><tspan x="0.75038159" y="6.5419288" fill="#000000" font-size="1px" stroke="#000000" stroke-opacity=".0078947" stroke-width=".15">5</tspan></text>
+ <circle cx="1.3762" cy="15.654" r=".225"/>
+ <text x="0.74182904" y="15.425046" fill="#000000" font-family="'Times New Roman'" font-size="1px" stroke="#000000" stroke-dasharray="1.8, 0.15" stroke-linejoin="round" stroke-opacity=".0078947" stroke-width=".15" text-align="center" text-anchor="middle" xml:space="preserve"><tspan x="0.74182904" y="15.425046" fill="#000000" font-size="1px" stroke="#000000" stroke-opacity=".0078947" stroke-width=".15">1</tspan></text>
+ <circle cx="12.692" cy="9.7799" r=".225"/>
+ <text x="11.88253" y="9.1554918" fill="#000000" font-family="'Times New Roman'" font-size="1px" stroke="#000000" stroke-dasharray="1.8, 0.15" stroke-linejoin="round" stroke-opacity=".0078947" stroke-width=".15" text-align="center" text-anchor="middle" xml:space="preserve"><tspan x="11.88253" y="9.1554918" fill="#000000" font-size="1px" stroke="#000000" stroke-opacity=".0078947" stroke-width=".15">6</tspan></text>
+ <circle cx="12.692" cy="18.763" r=".225"/>
+ <text x="11.919395" y="18.225349" fill="#000000" font-family="'Times New Roman'" font-size="1px" stroke="#000000" stroke-dasharray="1.8, 0.15" stroke-linejoin="round" stroke-opacity=".0078947" stroke-width=".15" text-align="center" text-anchor="middle" xml:space="preserve"><tspan x="11.919395" y="18.225349" fill="#000000" font-size="1px" stroke="#000000" stroke-opacity=".0078947" stroke-width=".15">2</tspan></text>
+</svg>
