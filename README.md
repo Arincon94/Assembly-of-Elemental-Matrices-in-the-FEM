@@ -7,7 +7,7 @@ The assembly of elemental matrices is a critical step in FEM, allowing the const
 
 The 8-node isoparametric hexahedral element is defined by nodes positioned at each corner of the cubic element, as follows 
 
-<img src="Figures/8nodes.svg" alt="8-Node Hexahedral Element" width="300"/>
+<img src="Figures/8nodes_element.svg" alt="8-Node Hexahedral Element" width="300"/>
 
 #### Shape functions
 
@@ -23,7 +23,7 @@ where $i$ is the node indice.
 
 The 8-node isoparametric hexahedral element is defined by nodes positioned at each corner of the cubic element, as follows 
 
-<img src="Figures/20nodes.svg" alt="8-Node Hexahedral Element" width="300"/>
+<img src="Figures/20nodes_element.svg" alt="8-Node Hexahedral Element" width="300"/>
 
 #### Shape functions
 
@@ -61,18 +61,50 @@ The nodes in the structure are numbered in a specific order for consistency and 
 2. **Left to Right**: Within each layer, nodes are numbered from the left side to the right side.
 3. **Back to Front**: For multi-layer structures, the numbering continues from the back of the structure to the front.
 
-This systematic approach ensures that each node has a unique identifier, making it easier to reference them in the mathematical formulations and the finite element analysis.
+This systematic approach ensures that each node has a unique identifier, making it easier to reference them in the mathematical formulations and the finite element analysis (the elements in the global structure are numbered following the same idea).
 
 Below is a visual representation of the node distribution in the structure, where the numbering of the degrees of freedom (in \( x \), \( y \), and \( z \)) for each node is indicated in red.
 
 <img src="Figures/8nodes_structure.svg" alt="8-Node Hexahedral Element" width="500"/>
 <img src="Figures/20nodes_structure.svg" alt="8-Node Hexahedral Element" width="500"/>
 
+## Indexing Global Matrices
 
+To index the global matrices, a matrix of degrees of freedom (`edofMat`, as it is called in the code) is utilized. This matrix contains the degrees of freedom for each node, following the numbering scheme of the structure. The degrees of freedom are organized in the order of the node positions for each element.
 
-  
+Below is shown how the matrix would look for the 8-node element.
 
-  
+```matlab
+edofMat = [4 5 6 10 11 12 7 8 9 1 2 3 16 17 18 22 23 24 19 20 21 13 14 15];
+```
+
+Elements are placed below this line of the matrix.
+
+Kronecker matrix product is applied between the index matrix `edofMat` and a unit vector of length $n$ (24 for the 8-node and 60 for the 20-node element), followed by a reshaping operation. 
+
+```matlab
+iS = reshape(kron(edofMat,ones(24,1))',24*24*nele,1);
+jS = reshape(kron(edofMat,ones(1,24))',24*24*nele,1);
+```
+or
+
+```matlab
+iS = reshape(kron(edofMat,ones(60,1))',60*60*nele,1);
+jS = reshape(kron(edofMat,ones(1,60))',60*60*nele,1);
+```
+where `nele` is the number of elements of the global structure.
+
+The resulting vectors (`iS` and `jS`) are structured so that the indices $iS(t)$ and $jS(t)$ correspond to the (i, j)th entry of the stiffness and inertia matrix for element $e$, where $t = i + 8(j − 1) + 64(e − 1)$. The third vector is obtained by reshaping the elementar intertia and stiffness matrices. 
+
+```matlab
+kK = reshape(KE(:)*E*x(:)',24*24*nele,1);
+kM = reshape(ME(:)*rho*x(:)',24*24*nele,1);
+```
+or
+```matlab
+kK = reshape(KE(:)*E*x(:)',60*60*nele,1);
+kM = reshape(ME(:)*rho*x(:)',60*60*nele,1);
+```
 
 
 
